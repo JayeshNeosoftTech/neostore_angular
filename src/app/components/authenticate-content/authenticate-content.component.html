@@ -1,0 +1,17 @@
+<section>
+    <div class="row g-0">
+        <div class="col-md-6">
+            <div class="authenticateimg-wrapper">
+                <img class="authenticate-img" src="../../../assets/img/authenticate-bg.svg" alt="background image"/>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <ng-container *ngIf="login_flag else signup_content">
+                <app-login-form (formflagForSignup)="GetflagFromLogin($event)"></app-login-form>
+            </ng-container>
+            <ng-template #signup_content>
+                <app-signup-form (formflag)="Getflag($event)"></app-signup-form>
+            </ng-template>
+        </div>
+    </div>
+</section>

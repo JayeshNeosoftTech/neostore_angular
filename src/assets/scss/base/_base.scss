@@ -1,0 +1,23 @@
+html {
+    font-size: 10px;
+}
+  
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    background-color: $white;
+}
+
+.container-wrapper{
+    max-width: 124rem;
+    margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+.common-btn{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #FFFFFF;
+    background-color: $primary-red;
+    border-color: $primary-red;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+    width: 75%;
+    
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: $button-hover;
+    }
+}

@@ -1,0 +1,17 @@
+@import "../../../assets/scss/helpers/_helpers-dir";
+
+.header-wrapper{
+    background-color: $primary-red; 
+    padding: 12px 12px;
+    .header-title{
+        color: $white;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        font-weight: 500;
+        margin-bottom: 0;
+
+        .anchor-link{
+            color: $white;
+        }
+    }
+}

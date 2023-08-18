@@ -1,0 +1,15 @@
+.navbar-wrapper{
+    background-color: $white;
+    position: sticky;
+    top: 0;
+}
+.navbar{
+    &-collapse{
+        flex-basis: unset; 
+        flex-grow: unset;
+    }
+
+    &-searchwrapper{
+       gap: 10px 15px;
+    }
+}

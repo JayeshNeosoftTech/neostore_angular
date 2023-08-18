@@ -1,0 +1,62 @@
+.common-form{
+    padding: 6rem 4rem;
+    background-color: $white;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 15px 2px $form-shadow;
+    width: 45.1rem;
+
+    .form-title{
+        font-size: 2.4rem;
+        line-height: 2.2rem;
+        font-weight: 700;
+        color: $secondary-red;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .inputfield-wrapper{
+        margin-bottom: 16px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+        .form-label{
+            font-weight: bold;
+            color: $grey-label;
+            margin-bottom: 13px;
+        }
+        .form-control{
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            font-weight: normal;
+            border-radius: 6px;
+            border: 0.1rem solid #C2C2C2;
+            padding: 1.4rem;
+            color: $form-input;
+        }
+    }
+
+    .anchor-link{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        color: $grey-anchor;
+    }
+
+    .button-wrapper{
+        text-align: center;
+        margin: 50px 0 40px 0;
+    }
+
+    
+    .para-text{
+        color: $grye-para;
+        text-align: center;
+        margin: 0;
+        .anchor-text{
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            font-weight: 500;
+            color: $grye-para;
+            cursor: pointer;
+        }
+    }
+}
