@@ -1,3 +1,5 @@
+@import "../../../assets/scss/helpers/_helpers-dir";
+
 .signupform-wrapper{
     padding: 10px 0 0 0;
 
@@ -11,6 +13,23 @@
             &:last-child{
                 margin-bottom: 0px;
             }
+        }
+        .condition-checkbox{
+            width: 1.8rem;
+            height: 1.8rem;
+            margin-right: 0.7rem;
+            vertical-align: bottom;
+            background-image: url('../../../assets/img/icons/check-icon.svg');
+            background-repeat: no-repeat;
+            background-size: 14px 10px;
+
+            &:checked{
+                background-color: $primary-red;
+                border-color: $primary-red;
+            }
+        }
+        .condition-text{
+            color: $form-input;
         }
     }
 }
