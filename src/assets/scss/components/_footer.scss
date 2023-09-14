@@ -1,0 +1,117 @@
+.common-footer{
+    background-color: $primary-black;
+    color: $white;
+
+    .container-wrapper{
+        padding: 34px 0;
+    }
+
+    .bottom-content{
+        padding: 15px 0;
+        background-color: $primary-red;
+
+        &__text{
+            margin: 0;
+            text-align: center;
+            font-weight: normal;
+        }
+    }
+
+    .info-panel{
+        &__contact-info{
+            font-weight: 300;
+            &-title{
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 20px;
+                font-weight: 300;
+            }
+
+            .number-wrapper{
+                width: fit-content;
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    background-color: $white;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &__numbers{
+                    text-decoration: none;
+                    color: $white;
+                    &:nth-child(2){
+                        margin-left: 40px;
+                    }
+                }
+            }
+
+            &-address{
+                margin: 9px 0 0 0;
+            }
+        }
+    }
+
+    .links-wrapper{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+
+        .footermenu-title{
+            font-size: 15px;
+            line-height: 17px;
+            font-weight: 700;
+            margin: 10px 0 18px 0;
+        }
+        .footermenu{
+            list-style: none;
+            padding: 0;
+            font-weight: 300;
+            
+            li{
+                padding: 12px 0;
+            }
+            &__links{
+                cursor: pointer;
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.subscribe-box{
+    position: relative;
+    padding: 12px 15px;
+    background-color: #FFFFFF;
+    margin: 33px 0;
+    border-radius: 3px;
+    width: 326px;
+
+    .message-icon{
+        margin-bottom: 2px;
+    }
+
+    input[type= 'email']{
+        margin-left: 8px;
+        outline: none;
+        border: none;
+        width: calc(100% - 115px);
+
+        &::placeholder{
+            color: $primary-red;
+        }
+    }
+
+    .common-btn{
+        position: absolute;
+        top: 50%;
+        right: 2px;
+        transform: translateY(-50%);
+        width: fit-content;
+        padding: 12px 15px;
+    }
+}

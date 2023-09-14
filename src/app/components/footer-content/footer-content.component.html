@@ -1,1 +1,63 @@
-<p>footer-content works!</p>
+<footer class="common-footer">
+    <div class="container-wrapper row">
+        <div class="col-md-4">
+            <div class="info-panel">
+                <img src="../../../assets/img/NeoSTORE.svg" alt="logo" width="178" height="45"/>
+
+                <div class="subscribe-box">
+                    <img class="message-icon" src="../../../assets/img/icons/message-icon.svg" alt="message" width="20" height="16"/>
+                    <input type="email" name="email" id="sub_email" placeholder="Your email address"/>
+                    <input class="common-btn" type="button" value="subscribe"/>
+                </div>
+
+                <div class="info-panel__contact-info">
+                    <h5 class="info-panel__contact-info-title">Contact Info</h5>
+                    <div class="number-wrapper">
+                        <a href="tel:+911234567890" class="number-wrapper__numbers">+91 12345 67890</a>
+                        <a href="tel:+911234567890" class="number-wrapper__numbers">+91 12345 67890</a>
+                    </div>
+                    <p class="info-panel__contact-info-address">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="links-wrapper">
+                <div class="">
+                    <h5 class="footermenu-title">Catagories</h5>
+                    <ul class="footermenu">
+                        <li *ngFor="let catogories of catogoties_link">
+                            <a class="footermenu__links">{{catogories}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="footermenu-title">CUSTOMER SERVICE</h5>
+                    <ul class="footermenu">
+                        <li *ngFor="let customeservice of customer_service">
+                            <a class="footermenu__links">{{customeservice}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="footermenu-title">FURNITURE</h5>
+                    <ul class="footermenu">
+                        <li *ngFor="let furniturelinks of furniture_link">
+                            <a class="footermenu__links">{{furniturelinks}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h5 class="footermenu-title">USEFUL LINKS</h5>
+                    <ul class="footermenu">
+                        <li *ngFor="let usefulelinks of usefule_link">
+                            <a class="footermenu__links">{{usefulelinks}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-content">
+        <p class="bottom-content__text">&copy;Neostore - All Rights Reserved</p>
+    </div>
+</footer>
